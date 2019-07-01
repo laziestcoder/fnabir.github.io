@@ -1957,12 +1957,12 @@ input:focus {
     line-height: 40px; }
     .single-footer-widget .footer-social-info a.facebook {
       background-color: #4c60ac; }
-    .single-footer-widget .footer-social-info a.twitter {
-      background-color: #00bae3; }
-    .single-footer-widget .footer-social-info a.pinterest {
-      background-color: #d91a18; }
-    .single-footer-widget .footer-social-info a.instagram {
-      background-color: #0085d7; }
+    .single-footer-widget .footer-social-info a.whatsapp {
+      background-color: #25d366; }
+    .single-footer-widget .footer-social-info a.skype {
+      background-color: #00aff0; }
+    .single-footer-widget .footer-social-info a.wechat {
+      background-color: #7bb32e; }
     .single-footer-widget .footer-social-info a.youtube {
       background-color: #e20000; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
