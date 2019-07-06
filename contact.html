@@ -122,7 +122,7 @@
                         <div class="contact-heading mb-50">
                             <h4>Thank you for your interest. <br>Please fill out the form below to inquire about our work.</h4>
                         </div>
-                        <form method="post" name="contact-form" action="contact-form-handler.php">
+                        <form method="post" name="myemailform" action="from-to-mail.php">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
@@ -163,10 +163,12 @@
 // Code for validating the form
 // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
 // for details
-var frmvalidator  = new Validator("contact");
+var frmvalidator  = new Validator("myemailform");
 frmvalidator.addValidation("name","req","Please provide your name"); 
-frmvalidator.addValidation("email","req","Please provide your email"); 
-frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+frmvalidator.addValidation("mail","req","Please provide your email"); 
+frmvalidator.addValidation("phone","req","Please provide your contact number");
+frmvalidator.addValidation("message","req","Please provide your enquiry");  
+frmvalidator.addValidation("mail","mail","Please enter a valid email address"); 
 </script>
 						
                     </div>
