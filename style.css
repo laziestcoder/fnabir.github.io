@@ -57,6 +57,73 @@ Last Update: Dec 31, 2018
 @import url(css/magnific-popup.css);
 @import url(css/font-awesome.min.css);
 @import url(css/style.css);
+/* Banner */
+
+.hero-section-about {
+  background: url(img/bg-img/about-us.jpg) 93.5% no-repeat;
+  background-size: cover;
+  height: 50vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section-contact {
+  background: url(img/bg-img/contact-us.jpg) 93.5% no-repeat;
+  background-size: cover;
+  height: 50vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section-product {
+  background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg") 50% no-repeat;
+  background-size: cover;
+  height: 50vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.half-black {
+  background: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* :: 1.0 Reboot CSS */
 * {
   margin: 0;
@@ -343,6 +410,7 @@ input:focus {
   to {
     -moz-transform: scale(1);
     opacity: 0; } }
+	
 /* :: 4.0 Heading CSS */
 .section-heading {
   position: relative;
@@ -493,6 +561,7 @@ input:focus {
 
 .classy-nav-container {
   background-color: transparent;
+  background-color: #e7f2fd;
   padding: 0; }
   @media only screen and (max-width: 767px) {
     .classy-nav-container {
@@ -739,7 +808,8 @@ input:focus {
   .single-portfolio-slide img {
     position: relative;
     z-index: 1;
-    width: 100%; }
+    width: 200px;
+	height: 279px	}
   .single-portfolio-slide .overlay-effect {
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
@@ -750,7 +820,7 @@ input:focus {
     top: 0;
     left: 0;
     z-index: 20;
-    background-color: rgba(231, 242, 253, 0.9);
+    background-color: rgba(231, 242, 253, 0.8);
     padding: 40px 30px;
     opacity: 0;
     visibility: hidden; }
@@ -1377,9 +1447,10 @@ input:focus {
       .breadcrumb-area .breadcrumb-bg-curve {
         width: 90%; } }
   .breadcrumb-area .title {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 0;
-    text-transform: capitalize; }
+	color: #fff;
+    text-transform: uppercase;}
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .breadcrumb-area .title {
         font-size: 42px; } }
@@ -1394,15 +1465,17 @@ input:focus {
     margin-bottom: 0;
     list-style: none;
     background-color: transparent;
-    border-radius: 0; }
+    border-radius: 0;}
     .breadcrumb-area .breadcumb--con .breadcrumb .breadcrumb-item,
     .breadcrumb-area .breadcumb--con .breadcrumb .breadcrumb-item > a,
     .breadcrumb-area .breadcumb--con .breadcrumb .breadcrumb-item.active {
       font-size: 18px;
       text-transform: capitalize;
-      color: #303030;
+      color: #fff; /*#303030;*/
       font-weight: normal;
-      letter-spacing: normal; }
+      letter-spacing: normal;
+	  display: inline-block;
+ }
       @media only screen and (max-width: 767px) {
         .breadcrumb-area .breadcumb--con .breadcrumb .breadcrumb-item,
         .breadcrumb-area .breadcumb--con .breadcrumb .breadcrumb-item > a,
@@ -1961,10 +2034,12 @@ input:focus {
       background-color: #25d366; }
     .single-footer-widget .footer-social-info a.skype {
       background-color: #00aff0; }
-    .single-footer-widget .footer-social-info a.wechat {
-      background-color: #7bb32e; }
+    .single-footer-widget .footer-social-info a.linkedin {
+      background-color: #0077B5; }
     .single-footer-widget .footer-social-info a.youtube {
       background-color: #e20000; }
+	.single-footer-widget .footer-social-info a.wechat {
+      background-color: #5CC928; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .single-footer-widget .footer-social-info a {
         width: 30px;

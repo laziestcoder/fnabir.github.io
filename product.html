@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<script language="JavaScript" src="scripts/gen_validatorv4.js" type="text/javascript"></script>
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Contact information of Asian Lift Bangladesh">
+    <meta name="description" content="All types of product Asian Lift Bangladesh provides">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Contact - Asian Lift Bangladesh</title>
+    <title>Asian Lift Bangladesh</title>
     <link rel="icon" href="./img/core-img/Asian Lift.ico">
     <link rel="stylesheet" href="style.css">
-	<script language="JavaScript" src="scripts/gen_validatorv4.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="preloader"><div class="wrapper"><div class="cssload-loader"></div></div></div>
@@ -60,15 +60,15 @@
 							 <li><a href="#">- Maintenance</a></li></ul></li></ul></li>
                              <li><a href="./project.html">Projects</a></li>
                              <li><a href="./about.html">About</a></li>
-                             <li class="current-item"><a href="./contact.html">Contact</a></li></ul>
+                             <li><a href="./contact.html">Contact</a></li></ul>
 		<div class="get-a-quote ml-4 mr-3" data-toggle="modal" data-target="#searchModal"><a href="#" class="btn uza-btn">Get A Quote</a></div></div></div></nav></div></div>
 </header>
-<div class="hero-section-contact">
+<div class="hero-section-product">
 <div class="half-black">
     <div class="breadcrumb-area"><div class="container h-100"><div class="row h-100 align-items-end"><div class="col-12">
-    <div class="breadcumb--con"><h2 class="title">Contact</h2><nav aria-label="breadcrumb">
+    <div class="breadcumb--con"><h2 class="title">Products</h2><nav aria-label="breadcrumb">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><i class="fa fa-home"></i> Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Contact</li></ol></nav></div></div></div></div>
+    <li class="breadcrumb-item active" aria-current="page">Products</li></ol></nav></div></div></div></div>
     <div class="breadcrumb-bg-curve"><img src="./img/core-img/curve-5.png" alt=""></div></div>
   </div></div>
 
@@ -80,7 +80,7 @@ frmvalidator.addValidation("mail","req","Please provide your email");
 frmvalidator.addValidation("mail","email","Please enter a valid email address"); 
 frmvalidator.addValidation("phone","req","Please provide your contact number");
 frmvalidator.addValidation("phone","num","Please write your contact number with only numeric characters");
-frmvalidator.addValidation("Product","dontselect=000","Please provide your enquiry");
+frmvalidator.addValidation("Product","dontselect=000","Please select product type");
 frmvalidator.addValidation("floor","req","Please provide the number of floor");
 frmvalidator.addValidation("floor","num","Please provide the number of floor");      
 frmvalidator.addValidation("floor","gt=0","Please provide a valid number of floor");
@@ -98,95 +98,95 @@ frmvalidator.addValidation("shaftd","num","Please provide width of shaft in mm w
 frmvalidator.addValidation("height","req","Please provide height of single floor in mm");
 frmvalidator.addValidation("height","num","Please provide height of single floor in mm with only numeric characters");
 </script>
-<section class="uza-contact-area section-padding-80">
-    <div class="container"><div class="row justify-content-between">
-    <div class="col-12 col-lg-8"><div class="uza-contact-form mb-80"><div class="contact-heading mb-50">
-    <h4>Thank you for your interest. <br>Please fill out the form below to inquire about our work.</h4></div>
-    <form method="post" name="myemailform" action= "mailto:asianliftbangladesh@gmail.com?subject=New form submission" enctype="text/plain" onsubmit="location.href='thanks.html';" >
-    <div class="row"><div class="col-lg-6"><div class="form-group"><label for='name'>Name:</label> <br>
-	<input type="text" class="form-control mb-30" name="name" placeholder="Full Name"></div></div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for='email'>Email Address:</label> <br>
-										<input type="email" class="form-control mb-30" name="mail" placeholder="someone@email.com">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for='phone'>Contact Number:</label> <br>
-										<input type="text" class="form-control mb-30" name="phone" placeholder="Phone/Mobile">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for='district'>District:</label> <br>
-										<input type="text" class="form-control mb-30" name="district" placeholder="District">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control mb-30" name="message" rows="8" cols="80" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn uza-btn btn-3 mt-15">Submit</button>
-                                </div>
-                            </div>
-                        </form>
-						
-<script language="JavaScript">
-var frmvalidator  = new Validator("myemailform");
-frmvalidator.addValidation("name","req","Please provide your name");
-frmvalidator.addValidation("name","alpha","Please write your name with only alphabetic characters");
-frmvalidator.addValidation("mail","req","Please provide your email"); 
-frmvalidator.addValidation("mail","email","Please enter a valid email address"); 
-frmvalidator.addValidation("phone","req","Please provide your contact number");
-frmvalidator.addValidation("phone","num","Please write your contact number with only numeric characters");
-frmvalidator.addValidation("message","req","Please provide your enquiry");  
-</script>
-						
-                    </div>
-                </div>
+<section class="uza-portfolio-area section-padding-80">
+    <div class="portfolio-menu text-center mb-80">
+	<button class="btn active">All Products</button>
+	<button class="btn" data-filter=".passenger-lift">Passenger Lift</button>
+	<button class="btn" data-filter=".cargo-lift">Cargo Lift</button>
+    <button class="btn" data-filter=".escalator">Escalator</button>
+	<button class="btn" data-filter=".hospital-lift">Hospital Lift</button>
+	<button class="btn" data-filter=".dumbwaiter">Dumbwaiter Lift</button>
+	<button class="btn" data-filter=".car-lift">Car Lift</button>
+    </div>
 
-                <!-- Single Contact Card -->
-                <div class="col-12 col-lg-4">
-                    <div class="contact-sidebar-area mb-80">
-                        <!-- Single Sidebar Area -->
-                        <div class="single-contact-card mb-50">
-                            <h4>Contact Us</h4>
-                            <h3>(+880) 1711 748836</h3>
-                            <h6>asianliftbangladesh@gmail.com</h6>
-                            <h6>Mon - Fri: 9:00 - 19:00 <br>Closed on Weekends and Holidays</h6>
-                        </div>
-						
-						<!-- Single Sidebar Area -->
-                        <div class="single-contact-card mb-50">
-                            <h4>Chittagong</h4>
-                            <h3>(+880) 1711 748836</h3>
-                            <h6>Noor Mohal, Anandipur Gate<br>Halishahar, P.C. Road, Chittagong</h6>
-                        </div>
+<div class="container-fluid"><div class="row uza-portfolio"><div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-12-05.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-12-05</p></div>
+    </div></div>
+	
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-12-06.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-12-06</p></div>
+    </div></div>
+	
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-12-07.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-12-07</p></div>
+    </div></div>
+	
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-12-12.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-12-12</p></div>
+    </div></div>
+	
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-15-28.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-15-28</p></div>
+    </div></div>
+	
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-15-29.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-15-29</p></div>
+    </div></div>
+	
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-15-30.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-15-30</p></div>
+    </div></div>
+	
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-15-31.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-15-31</p></div>
+    </div></div>
+	
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-15-32.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-15-32</p></div>
+    </div></div>
+	
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-15-33.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-15-33</p></div>
+    </div></div>
+	
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-15-34.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-15-34</p></div>
+    </div></div>
+	
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-15-35.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-15-35</p></div>
+    </div></div>
 
-                        <!-- Single Sidebar Area -->
-                        <div class="single-contact-card mb-50">
-                            <h4>Dhaka</h4>
-                            <h3>(+880) 1611 748836</h3>
-                            <h6>Plot-413, Road-16, Block-A, <br>Bashundhara, Dhaka</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-15-36.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-15-36</p></div>
+    </div></div>
 
-            <div class="row">
-                <!-- Google Maps -->
-                <div class="col-12">
-                    <div class="google-maps">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.3896277717035!2d91.78684631478758!3d22.33891238530351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd926f4116789%3A0x49e7b21982bea799!2sAsian+Lift+Bangladesh%2C+Noor+Mohal!5e0!3m2!1sen!2sbd!4v1562083327980!5m2!1sen!2sbd" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Contact Area End ***** -->
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-15-37.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-15-37</p></div>
+    </div></div>
+	
+<div class="single-portfolio-item passenger-lift"><div class="single-portfolio-slide">
+    <img src="./img/cb-img/STB-15-38.jpg" alt=""><div class="overlay-effect">
+    <h4>Passenger Lift</h4><p>STB-15-38</p></div>
+    </div></div>
+
+</div>
+<div class="row"><div class="col-12 text-center mt-30"><a href="#" class="btn uza-btn btn-3">Load More</a></div></div></div>
+
 <footer class="footer-area section-padding-80-0">
     <div class="container"><div class="row justify-content-between"><div class="col-12 col-sm-6 col-lg-4"><div class="single-footer-widget mb-80">
     <h4 class="widget-title">Contact Us</h4><div class="footer-content mb-15"><li><a href="tel:+8801711748836"><h3>(+880)1711748836</h3></a></li>
