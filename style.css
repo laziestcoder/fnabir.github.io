@@ -808,8 +808,7 @@ input:focus {
   .single-portfolio-slide img {
     position: relative;
     z-index: 1;
-    width: 200px;
-	height: 279px	}
+    width: 200px;	}
   .single-portfolio-slide .overlay-effect {
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
