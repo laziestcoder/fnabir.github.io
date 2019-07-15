@@ -14,78 +14,92 @@
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="wrapper">
-            <div class="cssload-loader"></div>
-        </div>
-    </div>
+    <div id="preloader"><div class="wrapper"><div class="cssload-loader"></div></div></div>
+    <div class="top-search-area">
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content"><div class="modal-body">
+	<button type="button" class="btn close-btn" data-dismiss="modal"><i class="fa fa-times"></i></button>
+    <form action= "mailto:asianliftbangladesh@gmail.com?subject=New form submission" enctype="text/plain" onsubmit="location.href='thanks.html';" method="post" name="quoteform">
+	<input type="name" name="name" class="form-control" placeholder="Full Name">
+	<input type="Contact No." name="phone" class="form-control" placeholder="Phone Number">
+	<input type="email" name="mail" class="form-control" placeholder="E-mail Addresss">
+	<label for='Product'>Type of Product : </label><select id="Product"  name="Product">
+        <option value="000" selected="selected">[choose yours]</option>
+        <option value="001">Passenger Lift</option>
+        <option value="002">Hospital Lift</option>
+        <option value="003">Escalator</option>
+        <option value="004">Cargo Lift</option>
+        <option value="005">Car Lift</option>
+        <option value="006">Moving Walk</option>
+        <option value="007">Capsule Lift</option>
+    </select>
+	<input type="floor" name="floor" class="form-control" placeholder="Number of Floor">
+	<input type="stop" name="stop" class="form-control" placeholder="Number of Stop">
+	<input type="capacity" name="capacity" class="form-control" placeholder="Number of Passenger/Maximum Load">
+	<input type="shaftw" name="shaftw" class="form-control" placeholder="Shaft Width (mm)">
+	<input type="shaftd" name="shaftd" class="form-control" placeholder="Shaft Depth (mm)">
+	<input type="height" name="height" class="form-control" placeholder="Floor Height (mm)">
+	<label><br>** Don't press ENTER / SUBMIT before filling up all the boxes **</label>
+	<label> If you don't understand any section of this form, close it and fill up the form in contact section. We will contact you.</label>
+	<button type="submit">Submit</button>
+    </form></div></div></div></div></div>
+<header class="header-area">
+        <div class="main-header-area"><div class="classy-nav-container breakpoint-off">
+        <nav class="classy-navbar justify-content-between" id="uzaNav">
+        <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+        <div class="classy-navbar-toggler"><span class="navbarToggler"><span></span><span></span><span></span></span></div>
+        <div class="classy-menu"><div class="classycloseIcon"><div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div></div>
+        <div class="classynav"><ul id="nav">
+        <li class="current-item"><a href="./index.html">Home</a></li>
+		<li><a href="./product.html">Products</a>
+        <ul class="dropdown"><li><a href="./product.html">- Passenger Lift</a></li>
+                             <li><a href="./product.html">- Hospital Lift</a></li>
+                             <li><a href="./product.html">- Cargo Lift</a></li>
+                             <li><a href="./product.html">- Escalator</a></li>
+                             <li><a href="./product.html">- Others</a></li>
+                             <li><a href="./product.html">- Service</a>
+        <ul class="dropdown"><li><a href="./product.html">- Installation</a></li>
+							 <li><a href="./product.html">- Maintenance</a></li></ul></li></ul></li>
+                             <li><a href="./project.html">Projects</a></li>
+                             <li><a href="./about.html">About</a></li>
+                             <li><a href="./contact.html">Contact</a></li></ul>
+		<div class="get-a-quote ml-4 mr-3" data-toggle="modal" data-target="#searchModal"><a href="#" class="btn uza-btn">Get A Quote</a></div></div></div></nav></div></div>
+</header>
+<div class="hero-section-home">
+<div class="half-black">
+    <div class="breadcrumb-area"><div class="container h-100"><div class="row h-100 align-items-end"><div class="col-12">
+    <div class="breadcumb--con"><h2 class="title">Asian Lift <BR>Bangladesh</h2><nav aria-label="breadcrumb">
+    <!--<ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><i class="fa fa-home"></i> Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Products</li></ol>--></nav></div></div></div></div>
+    <div class="breadcrumb-bg-curve"><img src="./img/core-img/curve-5.png" alt=""></div></div>
+  </div></div>
 
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area">
-        <!-- Main Header Start -->
-        <div class="main-header-area">
-            <div class="classy-nav-container breakpoint-off">
-                <!-- Classy Menu -->
-                <nav class="classy-navbar justify-content-between" id="uzaNav">
-
-                    <!-- Logo -->
-                    <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
-
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
-                    <!-- Menu -->
-                    <div class="classy-menu">
-                        <!-- Menu Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-
-                        <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul id="nav">
-                                <li class="current-item"><a href="./index.html">Home</a></li>
-                                <li><a href="./project.html">Projects</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">- Lift & Elevator</a></li>
-                                        <li><a href="#">- Escalator</a></li>
-                                        <li><a href="#">- Generator</a></li>
-                                        <li><a href="#">- Stablizer</a></li>
-                                        <li><a href="#">- Maintenance</a></li>
-                                        <li><a href="#">- Safety Device</a>
-                                            <ul class="dropdown">
-										<li><a href="#">- AVR</a></li>
-										<li><a href="#">- ARD</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="./product.html">Products</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-
-                            <!-- Get A Quote -->
-                            <div class="get-a-quote ml-4 mr-3">
-                                <a href="#" class="btn uza-btn">Get A Quote</a>
-                            </div>
-                        </div>
-                        <!-- Nav End -->
-
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
-<div class="banner">
-	<img class="banner-image" src="./img/bg-img/cover.jpg">
-</div>
-
+<script language="JavaScript">
+var frmvalidator  = new Validator("quoteform");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("mail","req","Please provide your email"); 
+frmvalidator.addValidation("mail","email","Please enter a valid email address"); 
+frmvalidator.addValidation("phone","req","Please provide your contact number");
+frmvalidator.addValidation("phone","num","Please write your contact number with only numeric characters");
+frmvalidator.addValidation("Product","dontselect=000","Please select product type");
+frmvalidator.addValidation("floor","req","Please provide the number of floor");
+frmvalidator.addValidation("floor","num","Please provide the number of floor");      
+frmvalidator.addValidation("floor","gt=0","Please provide a valid number of floor");
+frmvalidator.addValidation("floor","lt=100","Please provide a valid number of floor");  
+frmvalidator.addValidation("stop","req","Please provide the number of stop");
+frmvalidator.addValidation("stop","num","Please provide the number of stop");      
+frmvalidator.addValidation("stop","gt=0","Please provide a valid number of stop");
+frmvalidator.addValidation("stop","lt=100","Please provide a valid number of stop");
+frmvalidator.addValidation("capacity","req","Please provide the number of passenger or the load capacity in kgs required");
+frmvalidator.addValidation("capacity","num","Please provide your name");
+frmvalidator.addValidation("shaftw","req","Please provide width of shaft in mm");  
+frmvalidator.addValidation("shaftw","num","Please provide width of shaft in mm with only numeric characters");
+frmvalidator.addValidation("shaftd","req","Please provide depth of shaft in mm");
+frmvalidator.addValidation("shaftd","num","Please provide width of shaft in mm with only numeric characters");
+frmvalidator.addValidation("height","req","Please provide height of single floor in mm");
+frmvalidator.addValidation("height","num","Please provide height of single floor in mm with only numeric characters");
+</script>
     <!-- ***** Welcome Area Start ***** -->
     <section class="welcome-area">
         <div class="welcome-slides owl-carousel">
@@ -272,21 +286,10 @@
             </div>
         </div>
     </section>
-    <!-- ***** Services Area End ***** -->
-
-    <!-- ***** Portfolio Area Start ***** -->
-    <section class="uza-portfolio-area section-padding-80">
-        <div class="container">
-            <div class="row">
-                <!-- Section Heading -->
-                <div class="col-12">
-                    <div class="section-heading text-center">
-                        <h2>Project Type</h2>
-                        <p>We stay on top of our industry by being experts in yours.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="uza-portfolio-area section-padding-80"><div class="container"><div class="row">
+    <div class="col-12"><div class="section-heading text-center">
+    <h2>Project Type</h2><p>We stay on top of our industry by being experts in yours.</p>
+    </div></div></div></div>
 
 <div class="container-fluid"><div class="row"><div class="portfolio-sildes owl-carousel">
 	<div class="single-portfolio-slide"><img src="./img/bg-img/P1.jpg" alt="Passenger Lift" style="width:300px;height:418px;"><div class="overlay-effect">
@@ -314,26 +317,12 @@
     <div class="view-more-btn"><a href="product.html"><i class="arrow_right"></i></a></div></div>
 </div></div></div>
 
-        <!-- Border -->
-        <div class="container">
-            <div class="border-line"></div>
-        </div>
+<div class="container"><div class="border-line"></div></div>
+<div class="portfolio-bg-curve">
+    <img src="./img/core-img/curve-3.png" alt=""></div></section>
+<section class="uza-blog-area"><div class="blog-bg-curve">
+    <img src="./img/core-img/curve-4.png" alt=""></div>
 
-        <!-- Background Curve -->
-        <div class="portfolio-bg-curve">
-            <img src="./img/core-img/curve-3.png" alt="">
-        </div>
-    </section>
-    <!-- ***** Portfolio Area End ***** -->
-
-    <!-- ***** Blog Area Start ***** -->
-    <section class="uza-blog-area">
-        <!-- Background Curve -->
-        <div class="blog-bg-curve">
-            <img src="./img/core-img/curve-4.png" alt="">
-        </div>
-
-        <!-- CTA Area Start -->
 <div class="uza-cta-area section-padding-0-80"><div class="container">
 	<div class="row align-items-center"><div class="col-12 col-lg-8">
 	<div class="cta-content mb-80"><h2>Interested in working with us?</h2>
@@ -343,62 +332,27 @@
 	<a href="mailto:asianliftbangladesh@gmail.com"><span>E-mail us now:<br></span>asianliftbangladesh@gmail.com<br></a>
 	</div></div></div></div></div></div>
 
-        <div class="container">
-            <div class="row">
-                <!-- Section Heading -->
-                <div class="col-12">
-                    <div class="section-heading text-center">
-                        <h2>Our Latest Projects</h2>
-                        <p>Hit the button below or give us a call!</p>
-                    </div>
-                </div>
-            </div>
+<div class="container"><div class="row"><div class="col-12">
+    <div class="section-heading text-center"><h2>Our Latest Projects</h2>
+    <p>Hit the button below or give us a call!</p></div></div></div>
+<div class="row"><div class="col-12 col-lg-4">
+    <div class="single-blog-post bg-img mb-80" style="background-image: url(./img/bg-img/8.jpg);">
+    <div class="post-content"><span class="post-date"><span>23</span> August, 2018</span>
+    <a href="#" class="post-title"></a><p>Chittagong</p>
+    <a href="#" class="read-more-btn">Read More <i class="arrow_carrot-2right"></i></a>
+    </div></div></div>
+<div class="col-12 col-lg-4"><div class="single-blog-post bg-img mb-80" style="background-image: url(./img/bg-img/9.jpg);">
+    <div class="post-content"><span class="post-date"><span>13</span> December, 2018</span>
+    <a href="#" class="post-title">Shurovi Tower</a><p>Chittagong</p>
+    <a href="#" class="read-more-btn">Read More <i class="arrow_carrot-2right"></i></a>
+    </div></div></div>
+<div class="col-12 col-lg-4"><div class="single-blog-post bg-img mb-80" style="background-image: url(./img/bg-img/10.jpg);">
+    <div class="post-content"><span class="post-date"><span>08</span> July, 2018</span>
+    <a href="#" class="post-title">Tofael Ahmed</a><p>Feni</p>
+    <a href="#" class="read-more-btn">Read More <i class="arrow_carrot-2right"></i></a>
+    </div></div></div>
+</div></div></section>
 
-            <div class="row">
-
-                <!-- Single Blog Post -->
-                <div class="col-12 col-lg-4">
-                    <div class="single-blog-post bg-img mb-80" style="background-image: url(./img/bg-img/8.jpg);">
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <span class="post-date"><span>23</span> August, 2018</span>
-                            <a href="#" class="post-title">Green Tower</a>
-                            <p>Chittagong</p>
-                            <a href="#" class="read-more-btn">Read More <i class="arrow_carrot-2right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Post -->
-                <div class="col-12 col-lg-4">
-                    <div class="single-blog-post bg-img mb-80" style="background-image: url(./img/bg-img/9.jpg);">
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <span class="post-date"><span>13</span> December, 2018</span>
-                            <a href="#" class="post-title">Shurovi Tower</a>
-                            <p>Chittagong</p>
-                            <a href="#" class="read-more-btn">Read More <i class="arrow_carrot-2right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Blog Post -->
-                <div class="col-12 col-lg-4">
-                    <div class="single-blog-post bg-img mb-80" style="background-image: url(./img/bg-img/10.jpg);">
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <span class="post-date"><span>08</span> July, 2018</span>
-                            <a href="#" class="post-title">Tofael Ahmed</a>
-                            <p>Feni</p>
-                            <a href="#" class="read-more-btn">Read More <i class="arrow_carrot-2right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- ***** Blog Area End ***** -->
 <footer class="footer-area section-padding-80-0">
     <div class="container"><div class="row justify-content-between"><div class="col-12 col-sm-6 col-lg-4"><div class="single-footer-widget mb-80">
     <h4 class="widget-title">Contact Us</h4><div class="footer-content mb-15"><li><a href="tel:+8801711748836"><h3>(+880)1711748836</h3></a></li>
