@@ -9,17 +9,32 @@
 
 <url>
   <loc>https://asianliftbangladesh.cf/</loc>
-  <lastmod>2019-07-04T15:35:40+00:00</lastmod>
+  <lastmod>2019-07-15T07:41:57+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://asianliftbangladesh.cf/index.html</loc>
-  <lastmod>2019-07-04T15:35:40+00:00</lastmod>
+  <lastmod>2019-07-15T07:41:57+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://asianliftbangladesh.cf/product.html</loc>
+  <lastmod>2019-07-15T07:41:57+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://asianliftbangladesh.cf/about.html</loc>
+  <lastmod>2019-07-15T07:41:57+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://asianliftbangladesh.cf/contact.html</loc>
-  <lastmod>2019-07-04T15:35:40+00:00</lastmod>
+  <lastmod>2019-07-15T07:41:57+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
 
