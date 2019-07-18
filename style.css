@@ -57,6 +57,26 @@ Last Update: Dec 31, 2018
 @import url(css/magnific-popup.css);
 @import url(css/font-awesome.min.css);
 @import url(css/style.css);
+/* Table */
+table#Project {
+  width: 800px; 
+  background-color: #f1f1c1;
+  text-align: center;
+  border-spacing: 5px;
+  padding: 15px;
+  font-size: 22px;
+}
+table#Project tr:nth-child(even) {
+  background-color: #eee;
+}
+table#Project tr:nth-child(odd) {
+  background-color: #fff;
+}
+table#Project th {
+  color: white;
+  background-color: black;
+}
+
 /* Banner */
 
 .hero-section-home {
