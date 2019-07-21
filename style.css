@@ -1,14 +1,4 @@
 /* *********************************************
-[Master Stylesheet]
-
-Template Name: Uza - Creative Agency HTML5 Template
-Template Author: Colorlib
-Template Author URL: http://colorlib.com
-Version: 1.0.0
-Last Update: Dec 31, 2018
-
-*********************************************
-
 [Tables of CSS Content]
 
 + body
@@ -59,31 +49,35 @@ Last Update: Dec 31, 2018
 @import url(css/style.css);
 /* Table */
 table#Project {
-  width: 800px; 
+  width:100%; 
   background-color: #f1f1c1;
   text-align: center;
   border-spacing: 5px;
   padding: 15px;
-  font-size: 22px;
+  font-size: 18px;
+  border-color: #f1f1c1;
 }
-table#Project tr:nth-child(even) {
-  background-color: #eee;
+table#Project td:nth-child(even) {
+  background-color: #f9f9f9;
 }
-table#Project tr:nth-child(odd) {
-  background-color: #fff;
+table#Project td:nth-child(odd) {
+  background-color: #e7f2fd;
 }
 table#Project th {
   color: white;
   background-color: black;
 }
 
+td {
+	padding: 5px;
+	border: 3px solid white;
+}
 /* Banner */
 
 .hero-section-home {
   background: url(img/bg-img/cover.jpg) 93.5% no-repeat;
   background-size: cover;
   height: 90vh;
-  text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -790,7 +784,7 @@ input:focus {
   z-index: 2;
   width: 100%;
   height: 900px;
-  background-color: #ffffff; }
+  background-color: transparent; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single-welcome-slide {
       height: 750px; } }
@@ -823,7 +817,8 @@ input:focus {
     .single-welcome-slide .welcome-text h2 {
       font-size: 72px;
       display: block;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+	  color: #ffffff;	  }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .single-welcome-slide .welcome-text h2 {
           font-size: 48px; } }
@@ -1115,7 +1110,7 @@ input:focus {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 1px;
+  height: 4px;
   background-color: #e7f2fd; }
 
 .single-testimonial-slide {
@@ -1603,16 +1598,16 @@ input:focus {
       display: block;
       margin-bottom: 10px; }
       .single-blog-post .post-content .post-date span {
-        font-size: 36px;
+        font-size: 28px;
         color: #1583e9;
         margin-right: 5px; }
     .single-blog-post .post-content .post-title {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 600;
       margin-bottom: 15px;
       display: block; }
       .single-blog-post .post-content .post-title:focus, .single-blog-post .post-content .post-title:hover {
-        color: #1583e9; }
+        color: #1583e9;}
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .single-blog-post .post-content .post-title {
           font-size: 18px; } }
@@ -2072,7 +2067,10 @@ input:focus {
 /* :: 19.0 Footer CSS */
 .footer-area {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+	background-color: #e7f2fd;
+	width: 100%;
+  }
 
 .single-footer-widget {
   position: relative;
