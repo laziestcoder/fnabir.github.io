@@ -89,8 +89,8 @@ td {
           justify-content: center;
 }
 
-.hero-section-product {
-  background: url(img/bg-img/project.jpg) 93.5% no-repeat;
+.hero-section-products {
+  background: url(img/bg-img/product.jpg) 93.5% no-repeat;
   background-size: cover;
   height: 50vh;
   text-align: center;
@@ -871,7 +871,7 @@ input:focus {
   .single-portfolio-slide img {
     position: relative;
     z-index: 1;
-    width: 200px;	}
+    width: 100%;	}
   .single-portfolio-slide .overlay-effect {
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
