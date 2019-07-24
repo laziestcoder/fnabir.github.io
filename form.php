@@ -1,17 +1,24 @@
 <?php
 
 $result="";
+require 'phpmailer/PHPMailerAutoload.php';
 if(!isset($_POST['submit']))
 {
-	require 'phpmailer/PHPMailerAutoload.php';
-	$mail = new PHPMailer;
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$name = $_POST['name'];
+$message = $_POST['message'];
+$subject = $_POST['subject'];
+$thankyou_page = "thanks.html";
 	
-	$mail->Host='smtp.gmail.com';
-	$mail->Port=587;
-	$mail->SMTPAuth=true;
-	$mail->SMTPSecure='tls';
-	$mail->Username='asianliftbdctg@gmail.com';
-	$mail->Password='abcdefghijklmnoprstuvwxyz';
+$mail = new PHPMailer(true);
+$mail->isSMTP();
+$mail->Host = 'smtp.gmail.com';
+$mail->Port = 587;
+$mail->SMTPSecure = 'tls';
+$mail->SMTPAuth = true;
+$mail->Username='asianliftbdctg@gmail.com';
+$mail->Password='abcdefghijklmnoprstuvwxyz';
 	
 	$mail->setFrom($_POST['mail'],$_POST['name']);
 	$mail->addAddress('asianliftbangladesh@gmail.com');
@@ -22,10 +29,10 @@ if(!isset($_POST['submit']))
 	$mail->Body='<h4 align=left>Name : '.$_POST['name'].'<br>Email : '.$_POST['email'].'<br>Contact Number : '.$_POST['phone'].'<br>Email : '.$_POST['email'].'<br>Message : '.$_POST['message'].'</h4>'
 	
 	if(!$mail->send()){
-		&result="Something went wrong. Please try again.";
+		header( "Location: $thankyou_page" );
 	}
 	else{
-		&result="Thanks ".$_POST['name']." for contacting us. We'll get back to you soon!"
+		header( "Location: $thankyou_page" );
 	}
 }
    
