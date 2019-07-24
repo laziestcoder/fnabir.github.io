@@ -1,7 +1,7 @@
 <?php
 
 $result="";
-require 'phpmailer/PHPMailerAutoload.php';
+require 'PHPMailerAutoload.php';
 if(!isset($_POST['submit']))
 {
 $email = $_POST['email'];
@@ -15,7 +15,7 @@ $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
-$mail->SMTPSecure = 'ssl';
+$mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 $mail->Username='asianliftbdctg@gmail.com';
 $mail->Password='abcdefghijklmnoprstuvwxyz';
