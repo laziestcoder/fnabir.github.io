@@ -15,7 +15,7 @@ $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
-$mail->SMTPSecure = 'tls';
+$mail->SMTPSecure = 'ssl';
 $mail->SMTPAuth = true;
 $mail->Username='asianliftbdctg@gmail.com';
 $mail->Password='abcdefghijklmnoprstuvwxyz';
