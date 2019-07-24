@@ -102,7 +102,7 @@ frmvalidator.addValidation("height","num","Please provide height of single floor
     <div class="container"><div class="row justify-content-between">
     <div class="col-12 col-lg-8"><div class="uza-contact-form mb-80"><div class="contact-heading mb-50">
     <h4>Thank you for your interest. <br>Please fill out the form below to inquire about our work.</h4></div>
-<form method="post" name="myemailform" action= "form.php" onsubmit="location.href='thanks.html';" >
+<form method="post" name="myemailform" action= "form.php">
     
 	<div class="row"><div class="col-lg-6"><div class="form-group"><label for='name'>Name:</label> <br>
 	<input type="text" class="form-control mb-30" name="name" placeholder="Full Name"></div></div>
@@ -124,7 +124,6 @@ frmvalidator.addValidation("height","num","Please provide height of single floor
 <script language="JavaScript">
 var frmvalidator  = new Validator("myemailform");
 frmvalidator.addValidation("name","req","Please provide your name");
-frmvalidator.addValidation("name","alpha","Please write your name with only alphabetic characters");
 frmvalidator.addValidation("mail","req","Please provide your email"); 
 frmvalidator.addValidation("mail","email","Please enter a valid email address"); 
 frmvalidator.addValidation("phone","req","Please provide your contact number");
