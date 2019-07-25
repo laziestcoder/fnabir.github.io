@@ -712,13 +712,13 @@ input:focus {
 .top-search-area .modal-content {
   border: none; }
   .top-search-area .modal-content .modal-body {
-    padding: 50px; }
+    padding: 0px; }
     @media only screen and (max-width: 767px) {
       .top-search-area .modal-content .modal-body {
-        padding: 50px 15px; } }
+        padding: 0px 15px; } }
     @media only screen and (min-width: 576px) and (max-width: 767px) {
       .top-search-area .modal-content .modal-body {
-        padding: 50px; } }
+        padding: 0px; } }
     .top-search-area .modal-content .modal-body button.close-btn {
       position: absolute;
       top: 15px;
