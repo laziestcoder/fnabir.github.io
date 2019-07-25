@@ -1,7 +1,7 @@
 <?php
 
 $result="";
-require 'PHPMailerAutoload.php';
+require 'phpmailer/PHPMailerAutoload.php';
 if(!isset($_POST['submit']))
 {
 $email = $_POST['email'];
