@@ -77,6 +77,7 @@ td {
 .hero-section-home {
   background: url(img/bg-img/cover.jpg) 93.5% no-repeat;
   background-size: cover;
+  background-position: center;
   height: 90vh;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -92,7 +93,7 @@ td {
 .hero-section-products {
   background: url(img/bg-img/product.jpg) 93.5% no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 60vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -108,7 +109,8 @@ td {
 .hero-section-project {
   background: url(img/bg-img/project.jpg) 93.5% no-repeat;
   background-size: cover;
-  height: 50vh;
+  background-position: center;
+  height: 60vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -124,7 +126,7 @@ td {
 .hero-section-about {
   background: url(img/bg-img/about-us.jpg) 93.5% no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 60vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -140,7 +142,8 @@ td {
 .hero-section-contact {
   background: url(img/bg-img/contact-us.jpg) 93.5% no-repeat;
   background-size: cover;
-  height: 50vh;
+  background-position: center;
+  height: 60vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -156,7 +159,7 @@ td {
 .hero-section-product {
   background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg") 50% no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 60vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -734,24 +737,25 @@ input:focus {
 .top-search-area form {
   width: 100%;
   position: relative;
+  padding-bottom: 5px;
   z-index: 1; }
   .top-search-area form input {
     width: 100%;
     height: 50px;
-    border: none;
+	border: none;
     box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
-    border-radius: 6px;
+    border-radius: 15px;
     font-size: 12px;
     font-style: italic;
     padding: 0 20px; }
     .top-search-area form input:focus {
       box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08); }
   .top-search-area form button {
-    position: absolute;
+    position: relative;
     width: 100px;
     height: 50px;
     top: 0;
-    right: 0;
+    left: 120px;
     z-index: 10;
     border-radius: 0 6px 6px 0;
     border: none;
