@@ -17,30 +17,8 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content"><div class="modal-body">
 	<button type="button" class="btn close-btn" data-dismiss="modal"><i class="fa fa-times"></i></button>
-    <form action= "mailto:asianliftbangladesh@gmail.com?subject=New form submission" enctype="text/plain" onsubmit="location.href='thanks.html';" method="post" name="quoteform">
-	<input type="name" name="name" class="form-control" placeholder="Full Name">
-	<input type="Contact No." name="phone" class="form-control" placeholder="Phone Number">
-	<input type="email" name="mail" class="form-control" placeholder="E-mail Addresss">
-	<label for='Product'>Type of Product : </label><select id="Product"  name="Product">
-        <option value="000" selected="selected">[choose yours]</option>
-        <option value="001">Passenger Lift</option>
-        <option value="002">Hospital Lift</option>
-        <option value="003">Escalator</option>
-        <option value="004">Cargo Lift</option>
-        <option value="005">Car Lift</option>
-        <option value="006">Moving Walk</option>
-        <option value="007">Capsule Lift</option>
-    </select>
-	<input type="floor" name="floor" class="form-control" placeholder="Number of Floor">
-	<input type="stop" name="stop" class="form-control" placeholder="Number of Stop">
-	<input type="capacity" name="capacity" class="form-control" placeholder="Number of Passenger/Maximum Load">
-	<input type="shaftw" name="shaftw" class="form-control" placeholder="Shaft Width (mm)">
-	<input type="shaftd" name="shaftd" class="form-control" placeholder="Shaft Depth (mm)">
-	<input type="height" name="height" class="form-control" placeholder="Floor Height (mm)">
-	<label><br>** Don't press ENTER / SUBMIT before filling up all the boxes **</label>
-	<label> If you don't understand any section of this form, close it and fill up the form in contact section. We will contact you.</label>
-	<button type="submit">Submit</button>
-    </form></div></div></div></div></div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6BBBHMJq5xTA4ERM0F6WCkYGrmTeF9Zsr2FYdkqSXUiVvVg/viewform?embedded=true" width="490" height="1522" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div></div></div></div></div>
 <header class="header-area">
         <div class="main-header-area"><div class="classy-nav-container breakpoint-off">
         <nav class="classy-navbar justify-content-between" id="uzaNav">
@@ -72,69 +50,13 @@
     </div>
   </div></div>
 
-<script language="JavaScript">
-var frmvalidator  = new Validator("quoteform");
-frmvalidator.addValidation("name","req","Please provide your name");
-frmvalidator.addValidation("name","alpha","Please write your name with only alphabetic characters");
-frmvalidator.addValidation("mail","req","Please provide your email"); 
-frmvalidator.addValidation("mail","email","Please enter a valid email address"); 
-frmvalidator.addValidation("phone","req","Please provide your contact number");
-frmvalidator.addValidation("phone","num","Please write your contact number with only numeric characters");
-frmvalidator.addValidation("Product","dontselect=000","Please provide your enquiry");
-frmvalidator.addValidation("floor","req","Please provide the number of floor");
-frmvalidator.addValidation("floor","num","Please provide the number of floor");      
-frmvalidator.addValidation("floor","gt=0","Please provide a valid number of floor");
-frmvalidator.addValidation("floor","lt=100","Please provide a valid number of floor");  
-frmvalidator.addValidation("stop","req","Please provide the number of stop");
-frmvalidator.addValidation("stop","num","Please provide the number of stop");      
-frmvalidator.addValidation("stop","gt=0","Please provide a valid number of stop");
-frmvalidator.addValidation("stop","lt=100","Please provide a valid number of stop");
-frmvalidator.addValidation("capacity","req","Please provide the number of passenger or the load capacity required");
-frmvalidator.addValidation("capacity","num","Please provide your name");
-frmvalidator.addValidation("shaftw","req","Please provide width of shaft in mm");  
-frmvalidator.addValidation("shaftw","num","Please provide width of shaft in mm with only numeric characters");
-frmvalidator.addValidation("shaftd","req","Please provide depth of shaft in mm");
-frmvalidator.addValidation("shaftd","num","Please provide width of shaft in mm with only numeric characters");
-frmvalidator.addValidation("height","req","Please provide height of single floor in mm");
-frmvalidator.addValidation("height","num","Please provide height of single floor in mm with only numeric characters");
-</script>
 <section class="uza-contact-area section-padding-80">
     <div class="container"><div class="row justify-content-between">
     <div class="col-12 col-lg-8"><div class="uza-contact-form mb-80"><div class="contact-heading mb-50">
-    <h4>Thank you for your interest. <br>Please fill out the form below to inquire about our work.</h4></div>
-<form method="post" name="myemailform" action= "mailto:asianliftbangladesh@gmail.com?subject=New form submission" enctype="text/plain" onsubmit="location.href='thanks.html';" >
-    
-	<div class="row"><div class="col-lg-6"><div class="form-group"><label for='name'>Name:</label> <br>
-	<input type="text" class="form-control mb-30" name="name" placeholder="Full Name"></div></div>
-    
-	<div class="col-lg-6"><div class="form-group"><label for='email'>Email Address:</label> <br>
-	<input type="email" class="form-control mb-30" name="mail" placeholder="someone@email.com"></div></div>
-                                
-	<div class="col-lg-6"><div class="form-group"><label for='phone'>Contact Number:</label> <br>
-	<input type="text" class="form-control mb-30" name="phone" placeholder="Phone/Mobile"></div></div>
-                                
-	<div class="col-lg-6"><div class="form-group"><label for='district'>District:</label> <br>
-	<input type="text" class="form-control mb-30" name="district" placeholder="District"></div></div>
-                                
-	<div class="col-12"><div class="form-group">
-    <textarea class="form-control mb-30" name="message" rows="8" cols="80" placeholder="Message"></textarea></div></div>
-                                
-	<div class="col-12"><button class="btn uza-btn btn-3 mt-15">Submit</button></div></div></form>
-						
-<script language="JavaScript">
-var frmvalidator  = new Validator("myemailform");
-frmvalidator.addValidation("name","req","Please provide your name");
-frmvalidator.addValidation("name","alpha","Please write your name with only alphabetic characters");
-frmvalidator.addValidation("mail","req","Please provide your email"); 
-frmvalidator.addValidation("mail","email","Please enter a valid email address"); 
-frmvalidator.addValidation("phone","req","Please provide your contact number");
-frmvalidator.addValidation("phone","num","Please write your contact number with only numeric characters");
-frmvalidator.addValidation("message","req","Please provide your enquiry");  
-</script>
-</div></div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdC4QHSebIkOOgbwCY_6n2x76rUULMvSE3FC0Fa5xJSaqgIiQ/viewform?embedded=true" width="750" height="1068" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div></div></div>
 
 <div class="col-12 col-lg-4"><div class="contact-sidebar-area mb-80">
-
 <div class="single-contact-card mb-50"><h4>Contact Us</h4>
     <h3>(+880) 1711 748836</h3><h6>asianliftbangladesh@gmail.com</h6>
 	<h6>Mon - Fri: 9:00 - 19:00 <br>Closed on Weekends and Holidays</h6></div>
