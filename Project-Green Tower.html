@@ -1,102 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<script language="JavaScript" src="scripts/gen_validatorv4.js" type="text/javascript"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Green Tower project by Asian Lift Bangladesh">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Green Tower Project-Asian Lift Bangladesh</title>
+    <title>Green Tower Project</title>
     <link rel="icon" href="./img/core-img/Asian Lift.ico">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="preloader"><div class="wrapper"><div class="cssload-loader"></div></div></div>
     <div class="top-search-area">
     <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content"><div class="modal-body">
-	<button type="button" class="btn close-btn" data-dismiss="modal"><i class="fa fa-times"></i></button>
-    <form action= "mailto:asianliftbangladesh@gmail.com?subject=New form submission" enctype="text/plain" onsubmit="location.href='thanks.html';" method="post" name="quoteform">
-	<input type="name" name="name" class="form-control" placeholder="Full Name">
-	<input type="Contact No." name="phone" class="form-control" placeholder="Phone Number">
-	<input type="email" name="mail" class="form-control" placeholder="E-mail Addresss">
-	<label for='Product'>Type of Product : </label><select id="Product"  name="Product">
-        <option value="000" selected="selected">[choose yours]</option>
-        <option value="001">Passenger Lift</option>
-        <option value="002">Hospital Lift</option>
-        <option value="003">Escalator</option>
-        <option value="004">Cargo Lift</option>
-        <option value="005">Car Lift</option>
-        <option value="006">Moving Walk</option>
-        <option value="007">Capsule Lift</option>
-    </select>
-	<input type="floor" name="floor" class="form-control" placeholder="Number of Floor">
-	<input type="stop" name="stop" class="form-control" placeholder="Number of Stop">
-	<input type="capacity" name="capacity" class="form-control" placeholder="Number of Passenger/Maximum Load">
-	<input type="shaftw" name="shaftw" class="form-control" placeholder="Shaft Width (mm)">
-	<input type="shaftd" name="shaftd" class="form-control" placeholder="Shaft Depth (mm)">
-	<input type="height" name="height" class="form-control" placeholder="Floor Height (mm)">
-	<label><br>** Don't press ENTER / SUBMIT before filling up all the boxes **</label>
-	<label> If you don't understand any section of this form, close it and fill up the form in contact section. We will contact you.</label>
-	<button type="submit">Submit</button>
+	<h6><span style="color: red;">**</span> All fields are required.</h6><button type="button" class="btn close-btn" data-dismiss="modal" style="display: inline;"><i class="fa fa-times"></i></button>
+    <form action= "mailto:asianliftbangladesh@gmail.com?subject=New form submission" enctype="text/plain" method="post" name="quoteform">
+	<div class="finput-container"><i class="fa fa-user ficon"></i>
+	<input type="text" name="Full Name" class="form-control" placeholder="Full Name" required></div>
+	<div class="finput-container"><i class="fa fa-phone ficon"></i>
+	<input type="tel" name="Phone" class="form-control" placeholder="Phone Number: 01*********" pattern="[0-9]{11}" required></div>
+	<div class="finput-container"><i class="fa fa-envelope ficon"></i>
+	<input type="email" name="E-mail" class="form-control" placeholder="E-mail"></div>
+	<div class="finput-container"><i class="fa fa-address-card ficon"></i>
+	<input type="text" name="Address" class="form-control" placeholder="Addresss" required></div>
+	<div class="finput-container"><i class="fa fa-bars ficon"></i>
+	<label for='Product'>Type of Product : </label><select id="Product"  name="Product" required>
+        <option value="" selected> Choose option</option>
+        <option value="Passenger">Passenger Lift</option>
+        <option value="Hospital">Hospital Lift</option>
+        <option value="Escalator">Escalator</option>
+        <option value="Cargo">Cargo Lift</option>
+        <option value="Car">Car Lift</option>
+        <option value="Walk">Moving Walk</option>
+        <option value="Capsule">Capsule Lift</option>
+    </select></div>
+	<div class="finput-container"><i class="fa fa-building-o ficon"></i>
+	<input type="number" name="Floor" class="form-control" placeholder="Number of Floor" min="1" required></div>
+	<div class="finput-container"><i class="fa fa-stop ficon"></i>
+	<input type="number" name="Stop" class="form-control" placeholder="Number of Stop" min="1" required></div>
+	<div class="finput-container"><i class="fa fa-group ficon"></i>
+	<input type="number" name="Person or Load" class="form-control" placeholder="Number of Passenger/Maximum Load in Kgs." required></div>
+	<div class="finput-container"><i class="fa fa-arrows-h ficon"></i>
+	<input type="number" name="Shaft Width" class="form-control" placeholder="Shaft Width (mm)" min="0" required></div>
+	<div class="finput-container"><i class="fa fa-hashtag ficon"></i>
+	<input type="number" name="Shaft Depth" class="form-control" placeholder="Shaft Depth (mm)" min="0" required></div>
+	<div class="finput-container"><i class="fa fa-arrows-v ficon"></i>
+	<input type="number" name="Floor Height" class="form-control" placeholder="Floor Height (mm)" min="0" required></div>
+	<br><button class="btn uza-btn btn-3 mt-30" type="submit">Submit</button>
     </form></div></div></div></div></div>
+	
 <header class="header-area">
-        <div class="main-header-area"><div class="classy-nav-container breakpoint-off">
-        <nav class="classy-navbar justify-content-between" id="uzaNav">
-        <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
-        <div class="classy-navbar-toggler"><span class="navbarToggler"><span></span><span></span><span></span></span></div>
-        <div class="classy-menu"><div class="classycloseIcon"><div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div></div>
-        <div class="classynav"><ul id="nav">
-        <li><a href="./index.html">Home</a></li>
-		<li><a href="./product.html">Products</a>
-        <ul class="dropdown"><li><a href="#">- Passenger Lift</a></li>
-                             <li><a href="#">- Hospital Lift</a></li>
-                             <li><a href="#">- Cargo Lift</a></li>
-                             <li><a href="#">- Escalator</a></li>
-                             <li><a href="#">- Others</a></li>
-                             <li><a href="#">- Service</a>
-        <ul class="dropdown"><li><a href="#">- Installation</a></li>
-							 <li><a href="#">- Maintenance</a></li></ul></li></ul></li>
-                             <li class="current-item"><a href="./project.html">Projects</a></li>
-                             <li><a href="./about.html">About</a></li>
-                             <li><a href="./contact.html">Contact</a></li></ul>
-		<div class="get-a-quote ml-4 mr-3" data-toggle="modal" data-target="#searchModal"><a href="#" class="btn uza-btn">Get A Quote</a></div></div></div></nav></div></div>
+    <div class="main-header-area"><div class="classy-nav-container breakpoint-off">
+	<nav class="classy-navbar justify-content-between" id="uzaNav">
+	<a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+	<div class="classy-navbar-toggler"><span class="navbarToggler"><span></span><span></span><span></span></span></div>
+	<div class="classy-menu"><div class="classycloseIcon"><div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div></div>
+	<div class="classynav"><ul id="nav"><li class="current-item">
+	<a href="./index.html">Home</a></li><li><a href="./product.html">Products</a>
+    <ul class="dropdown"><li><a href="./product.html">- Passenger Lift</a></li>
+	<li><a href="./product.html">- Cargo Lift</a></li>
+	<li><a href="./product.html">- Escalator</a></li>
+	<li><a href="./product.html">- Hospital Lift</a></li>
+	<li><a href="./product.html">- Dumbwaiter Lift</a></li>
+	<li><a href="./product.html">- Car Lift</a></li></ul></li>
+	<li><a href="./project.html">Projects</a></li>
+	<li><a href="./service.html">Services</a></li>
+	<li><a href="./about.html">About</a></li>
+	<li><a href="./contact.html">Contact</a></li></ul>
+	<div class="get-a-quote ml-4 mr-3" data-toggle="modal" data-target="#searchModal">
+	<a href="#" class="btn uza-btn">Get A Quote</a></div></div></div></nav></div></div>
 </header>
-<div class="hero-section-project">
-<div class="half-black">
+
+<div class="hero-section-project"><div class="half-black">
     <div class="breadcrumb-area"><div class="container h-100"><div class="row h-100 align-items-end"><div class="col-12">
     <div class="breadcumb--con"><h2 class="title">Projects</h2><nav aria-label="breadcrumb">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><i class="fa fa-home"></i> Home</a></li>
 	<li class="breadcrumb-item"><a href="./project.html"> Projects</a></li>
     <li class="breadcrumb-item active" aria-current="page">Green Tower</li></ol></nav></div></div></div></div></div>
-  </div></div>
+</div></div>
 
-<script language="JavaScript">
-var frmvalidator  = new Validator("quoteform");
-frmvalidator.addValidation("name","req","Please provide your name");
-frmvalidator.addValidation("mail","req","Please provide your email"); 
-frmvalidator.addValidation("mail","email","Please enter a valid email address"); 
-frmvalidator.addValidation("phone","req","Please provide your contact number");
-frmvalidator.addValidation("phone","num","Please write your contact number with only numeric characters");
-frmvalidator.addValidation("Product","dontselect=000","Please select product type");
-frmvalidator.addValidation("floor","req","Please provide the number of floor");
-frmvalidator.addValidation("floor","num","Please provide the number of floor");      
-frmvalidator.addValidation("floor","gt=0","Please provide a valid number of floor");
-frmvalidator.addValidation("floor","lt=100","Please provide a valid number of floor");  
-frmvalidator.addValidation("stop","req","Please provide the number of stop");
-frmvalidator.addValidation("stop","num","Please provide the number of stop");      
-frmvalidator.addValidation("stop","gt=0","Please provide a valid number of stop");
-frmvalidator.addValidation("stop","lt=100","Please provide a valid number of stop");
-frmvalidator.addValidation("capacity","req","Please provide the number of passenger or the load capacity in kgs required");
-frmvalidator.addValidation("capacity","num","Please provide your name");
-frmvalidator.addValidation("shaftw","req","Please provide width of shaft in mm");  
-frmvalidator.addValidation("shaftw","num","Please provide width of shaft in mm with only numeric characters");
-frmvalidator.addValidation("shaftd","req","Please provide depth of shaft in mm");
-frmvalidator.addValidation("shaftd","num","Please provide width of shaft in mm with only numeric characters");
-frmvalidator.addValidation("height","req","Please provide height of single floor in mm");
-frmvalidator.addValidation("height","num","Please provide height of single floor in mm with only numeric characters");
-</script>
 <section class="uza-portfolio-single-area section-padding-80"><div class="container"><div class="row justify-content-between align-items-end">
     <div class="col-12 col-md-6"><div class="portfolio-details-text"><h2>Green Tower</h2><h6>Bohoddarhat, Chittagong</h6>
     </div></div></div>

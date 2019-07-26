@@ -6,12 +6,10 @@
     <meta name="description" content="About Asian Lift Bangladesh">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>About - Asian Lift Bangladesh</title>
+    <title>About</title>
     <link rel="icon" href="./img/core-img/Asian Lift.ico">
     <link rel="stylesheet" href="style.css">
 </head>
-
-<script language="JavaScript" src="scripts/gen_validatorv4.js" type="text/javascript"></script>
 
 <body>
     <div id="preloader"><div class="wrapper"><div class="cssload-loader"></div></div></div>
@@ -19,156 +17,116 @@
     <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content"><div class="modal-body">
-	<button type="button" class="btn close-btn" data-dismiss="modal"><i class="fa fa-times"></i></button>
-    <form action= "mailto:asianliftbangladesh@gmail.com?subject=New form submission" enctype="text/plain" onsubmit="location.href='thanks.html';" method="post" name="quoteform">
-	<input type="name" name="name" class="form-control" placeholder="Full Name">
-	<input type="Contact No." name="phone" class="form-control" placeholder="Phone Number">
-	<input type="email" name="mail" class="form-control" placeholder="E-mail Addresss">
-	<label for='Product'>Type of Product : </label><select id="Product"  name="Product">
-        <option value="000" selected="selected">[choose yours]</option>
-        <option value="001">Passenger Lift</option>
-        <option value="002">Hospital Lift</option>
-        <option value="003">Escalator</option>
-        <option value="004">Cargo Lift</option>
-        <option value="005">Car Lift</option>
-        <option value="006">Moving Walk</option>
-        <option value="007">Capsule Lift</option>
-    </select>
-	<input type="floor" name="floor" class="form-control" placeholder="Number of Floor">
-	<input type="stop" name="stop" class="form-control" placeholder="Number of Stop">
-	<input type="capacity" name="capacity" class="form-control" placeholder="Number of Passenger/Maximum Load">
-	<input type="shaftw" name="shaftw" class="form-control" placeholder="Shaft Width (mm)">
-	<input type="shaftd" name="shaftd" class="form-control" placeholder="Shaft Depth (mm)">
-	<input type="height" name="height" class="form-control" placeholder="Floor Height (mm)">
-	<label><br>** Don't press ENTER / SUBMIT before filling up all the boxes **</label>
-	<label> If you don't understand any section of this form, close it and fill up the form in contact section. We will contact you.</label>
-	<button type="submit">Submit</button>
+	<h6><span style="color: red;">**</span> All fields are required.</h6><button type="button" class="btn close-btn" data-dismiss="modal" style="display: inline;"><i class="fa fa-times"></i></button>
+    <form action= "mailto:asianliftbangladesh@gmail.com?subject=New form submission" enctype="text/plain" method="post" name="quoteform">
+	<div class="finput-container"><i class="fa fa-user ficon"></i>
+	<input type="text" name="Full Name" class="form-control" placeholder="Full Name" required></div>
+	<div class="finput-container"><i class="fa fa-phone ficon"></i>
+	<input type="tel" name="Phone" class="form-control" placeholder="Phone Number: 01*********" pattern="[0-9]{11}" required></div>
+	<div class="finput-container"><i class="fa fa-envelope ficon"></i>
+	<input type="email" name="E-mail" class="form-control" placeholder="E-mail"></div>
+	<div class="finput-container"><i class="fa fa-address-card ficon"></i>
+	<input type="text" name="Address" class="form-control" placeholder="Addresss" required></div>
+	<div class="finput-container"><i class="fa fa-bars ficon"></i>
+	<label for='Product'>Type of Product : </label><select id="Product"  name="Product" required>
+        <option value="" selected> Choose option</option>
+        <option value="Passenger">Passenger Lift</option>
+        <option value="Hospital">Hospital Lift</option>
+        <option value="Escalator">Escalator</option>
+        <option value="Cargo">Cargo Lift</option>
+        <option value="Car">Car Lift</option>
+        <option value="Walk">Moving Walk</option>
+        <option value="Capsule">Capsule Lift</option>
+    </select></div>
+	<div class="finput-container"><i class="fa fa-building-o ficon"></i>
+	<input type="number" name="Floor" class="form-control" placeholder="Number of Floor" min="1" required></div>
+	<div class="finput-container"><i class="fa fa-stop ficon"></i>
+	<input type="number" name="Stop" class="form-control" placeholder="Number of Stop" min="1" required></div>
+	<div class="finput-container"><i class="fa fa-group ficon"></i>
+	<input type="number" name="Person or Load" class="form-control" placeholder="Number of Passenger/Maximum Load in Kgs." required></div>
+	<div class="finput-container"><i class="fa fa-arrows-h ficon"></i>
+	<input type="number" name="Shaft Width" class="form-control" placeholder="Shaft Width (mm)" min="0" required></div>
+	<div class="finput-container"><i class="fa fa-hashtag ficon"></i>
+	<input type="number" name="Shaft Depth" class="form-control" placeholder="Shaft Depth (mm)" min="0" required></div>
+	<div class="finput-container"><i class="fa fa-arrows-v ficon"></i>
+	<input type="number" name="Floor Height" class="form-control" placeholder="Floor Height (mm)" min="0" required></div>
+	<br><button class="btn uza-btn btn-3 mt-30" type="submit">Submit</button>
     </form></div></div></div></div></div>
+	
 <header class="header-area">
-        <div class="main-header-area"><div class="classy-nav-container breakpoint-off">
-        <nav class="classy-navbar justify-content-between" id="uzaNav">
-        <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
-        <div class="classy-navbar-toggler"><span class="navbarToggler"><span></span><span></span><span></span></span></div>
-        <div class="classy-menu"><div class="classycloseIcon"><div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div></div>
-        <div class="classynav"><ul id="nav">
-        <li><a href="./index.html">Home</a></li>
-		<li><a href="./product.html">Products</a>
-        <ul class="dropdown"><li><a href="#">- Passenger Lift</a></li>
-                             <li><a href="#">- Hospital Lift</a></li>
-                             <li><a href="#">- Cargo Lift</a></li>
-                             <li><a href="#">- Escalator</a></li>
-                             <li><a href="#">- Others</a></li>
-                             <li><a href="#">- Service</a>
-        <ul class="dropdown"><li><a href="#">- Installation</a></li>
-							 <li><a href="#">- Maintenance</a></li></ul></li></ul></li>
-                             <li><a href="./project.html">Projects</a></li>
-                             <li class="current-item"><a href="./about.html">About</a></li>
-                             <li><a href="./contact.html">Contact</a></li></ul>
-		<div class="get-a-quote ml-4 mr-3" data-toggle="modal" data-target="#searchModal"><a href="#" class="btn uza-btn">Get A Quote</a></div></div></div></nav></div></div>
+    <div class="main-header-area"><div class="classy-nav-container breakpoint-off">
+	<nav class="classy-navbar justify-content-between" id="uzaNav">
+	<a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+	<div class="classy-navbar-toggler"><span class="navbarToggler"><span></span><span></span><span></span></span></div>
+	<div class="classy-menu"><div class="classycloseIcon"><div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div></div>
+	<div class="classynav"><ul id="nav"><li class="current-item">
+	<a href="./index.html">Home</a></li><li><a href="./product.html">Products</a>
+    <ul class="dropdown"><li><a href="./product.html">- Passenger Lift</a></li>
+	<li><a href="./product.html">- Cargo Lift</a></li>
+	<li><a href="./product.html">- Escalator</a></li>
+	<li><a href="./product.html">- Hospital Lift</a></li>
+	<li><a href="./product.html">- Dumbwaiter Lift</a></li>
+	<li><a href="./product.html">- Car Lift</a></li></ul></li>
+	<li><a href="./project.html">Projects</a></li>
+	<li><a href="./service.html">Services</a></li>
+	<li><a href="./about.html">About</a></li>
+	<li><a href="./contact.html">Contact</a></li></ul>
+	<div class="get-a-quote ml-4 mr-3" data-toggle="modal" data-target="#searchModal">
+	<a href="#" class="btn uza-btn">Get A Quote</a></div></div></div></nav></div></div>
 </header>
-<div class="hero-section-about">
-<div class="half-black">
+
+<div class="hero-section-about"><div class="half-black">
     <div class="breadcrumb-area"><div class="container h-100"><div class="row h-100 align-items-end"><div class="col-12">
     <div class="breadcumb--con"><h2 class="title">About</h2><nav aria-label="breadcrumb">
     <ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><i class="fa fa-home"></i> Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">About</li></ol></nav></div></div></div></div>
     </div>
-  </div></div>
+</div></div>
 
-<script language="JavaScript">
-var frmvalidator  = new Validator("quoteform");
-frmvalidator.addValidation("name","req","Please provide your name");
-frmvalidator.addValidation("name","alpha","Please write your name with only alphabetic characters");
-frmvalidator.addValidation("mail","req","Please provide your email"); 
-frmvalidator.addValidation("mail","email","Please enter a valid email address"); 
-frmvalidator.addValidation("phone","req","Please provide your contact number");
-frmvalidator.addValidation("phone","num","Please write your contact number with only numeric characters");
-frmvalidator.addValidation("Product","dontselect=000","Please provide your enquiry");
-frmvalidator.addValidation("floor","req","Please provide the number of floor");
-frmvalidator.addValidation("floor","num","Please provide the number of floor");      
-frmvalidator.addValidation("floor","gt=0","Please provide a valid number of floor");
-frmvalidator.addValidation("floor","lt=100","Please provide a valid number of floor");  
-frmvalidator.addValidation("stop","req","Please provide the number of stop");
-frmvalidator.addValidation("stop","num","Please provide the number of stop");      
-frmvalidator.addValidation("stop","gt=0","Please provide a valid number of stop");
-frmvalidator.addValidation("stop","lt=100","Please provide a valid number of stop");
-frmvalidator.addValidation("capacity","req","Please provide the number of passenger or the load capacity required");
-frmvalidator.addValidation("capacity","num","Please provide your name");
-frmvalidator.addValidation("shaftw","req","Please provide width of shaft in mm");  
-frmvalidator.addValidation("shaftw","num","Please provide width of shaft in mm with only numeric characters");
-frmvalidator.addValidation("shaftd","req","Please provide depth of shaft in mm");
-frmvalidator.addValidation("shaftd","num","Please provide width of shaft in mm with only numeric characters");
-frmvalidator.addValidation("height","req","Please provide height of single floor in mm");
-frmvalidator.addValidation("height","num","Please provide height of single floor in mm with only numeric characters");
-</script>
+<section class="uza-about-us-area section-padding-80">
+    <div class="container"><div class="row align-items-center"><div class="col-12 col-md-6">
+    <div class="about-us-thumbnail mb-80"><img src="./img/bg-img/V.jpg" alt="">
+    <div class="uza-video-area hi-icon-effect-8">
+    <a href="https://www.youtube.com/watch?v=CeOklEyUw0I" class="hi-icon video-play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+    </div></div></div>
 
-    <!-- ***** About Us Area Start ***** -->
-    <section class="uza-about-us-area section-padding-80">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- About Thumbnail -->
-                <div class="col-12 col-md-6">
-                    <div class="about-us-thumbnail mb-80">
-                        <img src="./img/bg-img/V.jpg" alt="">
-                        <!-- Video Area -->
-                        <div class="uza-video-area hi-icon-effect-8">
-                            <a href="https://www.youtube.com/watch?v=CeOklEyUw0I" class="hi-icon video-play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
+<div class="col-12 col-lg-6"><div class="section-heading mb-5">
+    <h2>Company Profile</h2></div>
+	<div class="about-us-content mb-80">
+    <div class="about-tab-area">
+    <ul class="nav nav-tabs mb-50" id="mona_modelTab" role="tablist">
+    <li class="nav-item">
+    <a class="nav-link active" id="tab1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">CREATION</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" id="tab2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"> ANALYSIS</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" id="tab3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">STRATEGY</a>
+    </li>
+    </ul></div>
 
-                <!-- About Us Content -->
-                <div class="col-12 col-lg-6">
-                    <div class="section-heading mb-5">
-                        <h2>Company Profile</h2>
-                    </div>
+    <div class="about-tab-content"><div class="tab-content" id="mona_modelTabContent">
+    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab1">
+    <div class="tab-content-text"><p>To be available</p>
+    <p></p>
+    <a href="./contact.html" class="btn uza-btn mt-30">Get In Touch</a></div></div>
 
-                    <div class="about-us-content mb-80">
-                        <div class="about-tab-area">
-                            <ul class="nav nav-tabs mb-50" id="mona_modelTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="tab1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">CREATION</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="tab2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"> ANALYSIS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="tab3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">STRATEGY</a>
-                                </li>
-                            </ul>
-                        </div>
+    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab2">
+    <div class="tab-content-text">
+    <p>To be available</p>
+    <p></p>
+    <a href="./contact.html" class="btn uza-btn mt-30">Get In Touch</a></div></div>
 
-                        <!-- Mona Tab Content -->
-                        <div class="about-tab-content">
-                            <div class="tab-content" id="mona_modelTabContent">
-                                <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab1">
-                                    <!-- Tab Content Text -->
-                                    <div class="tab-content-text">
-                                        <p>To be available</p>
-                                        <p></p>
-                                        <a href="./contact.html" class="btn uza-btn mt-30">Get In Touch</a>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab2">
-                                    <!-- Tab Content Text -->
-                                    <div class="tab-content-text">
-                                        <p>To be available</p>
-                                        <p></p>
-                                        <a href="./contact.html" class="btn uza-btn mt-30">Get In Touch</a>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab3">
-                                    <!-- Tab Content Text -->
-                                    <div class="tab-content-text">
-                                        <p>To be available</p>
-                                        <p></p>
-                                        <a href="./contact.html" class="btn uza-btn mt-30">Get In Touch</a>
-    </div></div>
+    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab3">
+    <div class="tab-content-text">
+	<p>To be available</p>
+    <p></p>
+    <a href="./contact.html" class="btn uza-btn mt-30">Get In Touch</a></div></div>
 	</div></div></div></div></div></div>
+
     <div class="about-bg-pattern"><img src="./img/core-img/curve-2.png" alt=""></div>
-    </section>
+</section>
 	
 <section class="uza-why-choose-us-area"><div class="container"><div class="row align-items-center">
     <div class="col-12 col-lg-6"><div class="choose-us-content mb-80"><div class="section-heading mb-4">
@@ -272,7 +230,6 @@ frmvalidator.addValidation("height","num","Please provide height of single floor
 	<div class="quote-icon"><img src="img/core-img/quote.png" alt=""></div>
     </div></div></div></div></div></div></div>
 
-
 <footer class="footer-area section-padding-80-0">
     <div class="container"><div class="row justify-content-between"><div class="col-12 col-sm-6 col-lg-4"><div class="single-footer-widget mb-80">
     <h4 class="widget-title">Contact Us</h4><div class="footer-content mb-15"><li><a href="tel:+8801711748836"><h3>(+880)1711748836</h3></a></li>
@@ -285,7 +242,7 @@ frmvalidator.addValidation("height","num","Please provide height of single floor
     <p>Lift, Elevator and related utilities installation and Maintenance Provider</p><div class="footer-social-info">
     <a href="https://www.facebook.com/Asian-Lift-Bangladesh-381315052017938/" target="_blank" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
     <a href="https://wa.me/8801611748836" target="_blank" class="whatsapp" data-toggle="tooltip" data-placement="top" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>
-	<a href="https://join.skype.com/invite/lCHqsVwTDh7R" target="_blank" class="skype" data-toggle="tooltip" data-placement="top" title="Skype"><i class="fa fa-skype"></i></a>
+	<a href="#" target="_blank" class="skype" data-toggle="tooltip" data-placement="top" title="Skype ID: rafije2"><i class="fa fa-skype"></i></a>
     <a href="https://www.youtube.com/channel/UCDS_06KrmN5TRu5RksfwJLw?view_as=subscriber" target="_blank" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"><i class="fa fa-youtube-play"></i></a>
 	<a href="https://www.linkedin.com/in/rafiqul-islam-2abb515a/" target="_blank" class="linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
 	<a href="#" target="_blank" class="wechat" data-toggle="tooltip" data-placement="top" title="WeChat ID: rafij-"><i class="fa fa-wechat"></i></a>
