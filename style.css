@@ -91,8 +91,9 @@ td {
 }
 
 .hero-section-service {
-  background: url(img/bg-img/product.jpg) 93.5% no-repeat;
+  background: url(img/bg-img/service.jpg) 93.5% no-repeat;
   background-size: cover;
+  background-position: center;
   height: 60vh;
   text-align: center;
   display: -webkit-flex;
@@ -157,8 +158,10 @@ td {
 }
 
 .hero-section-product {
-  background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg") 50% no-repeat;
+  /*background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg") 50% no-repeat;*/
+  background: url(img/bg-img/product.jpg) 93.5% no-repeat;
   background-size: cover;
+  background-position: center;
   height: 60vh;
   text-align: center;
   display: -webkit-flex;
@@ -787,7 +790,7 @@ input:focus {
 	border: none;
     box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.08);
     border-radius: 0;
-    font-size: 16px;
+    font-size: 15px;
     font-style: italic;
 
 }
@@ -913,7 +916,8 @@ input:focus {
   .single-portfolio-slide img {
     position: relative;
     z-index: 1;
-    width: 100%;	}
+    width:200px;
+	height:279px;}
   .single-portfolio-slide .overlay-effect {
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
@@ -994,6 +998,97 @@ input:focus {
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .single-portfolio-slide:focus .view-more-btn a, .single-portfolio-slide:hover .view-more-btn a {
           right: 30px; } }
+		  
+.index-portfolio-slide {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px; }
+  .index-portfolio-slide img {
+    position: relative;
+    z-index: 1;
+    width: 300px;
+	height: 418px;
+	}
+  .index-portfolio-slide .overlay-effect {
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: rgba(231, 242, 253, 0.8);
+    padding: 40px 30px;
+    opacity: 0;
+    visibility: hidden; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .index-portfolio-slide .overlay-effect {
+        padding: 30px; } }
+    @media only screen and (max-width: 767px) {
+      .index-portfolio-slide .overlay-effect {
+        padding: 30px; } }
+    .index-portfolio-slide .overlay-effect h4 {
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 600; }
+      @media only screen and (max-width: 767px) {
+        .index-portfolio-slide .overlay-effect h4 {
+          margin-bottom: 10px;
+          font-size: 20px; } }
+    .index-portfolio-slide .overlay-effect p {
+      margin-bottom: 0;
+      line-height: 1.6; }
+      @media only screen and (max-width: 767px) {
+        .index-portfolio-slide .overlay-effect p {
+          font-size: 14px; } }
+  .index-portfolio-slide .view-more-btn a {
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    line-height: 65px;
+    font-size: 24px;
+    opacity: 0;
+    visibility: hidden; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .index-portfolio-slide .view-more-btn a {
+        bottom: 30px;
+        width: 40px;
+        height: 40px;
+        line-height: 45px; } }
+    @media only screen and (max-width: 767px) {
+      .index-portfolio-slide .view-more-btn a {
+        bottom: 30px;
+        width: 40px;
+        height: 40px;
+        line-height: 45px; } }
+    .index-portfolio-slide .view-more-btn a:focus, .index-portfolio-slide .view-more-btn a:hover {
+      background-color: #1583e9;
+      color: #ffffff; }
+  .index-portfolio-slide:focus, .index-portfolio-slide:hover {
+    -webkit-box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.2);
+    box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.2); }
+    .index-portfolio-slide:focus .overlay-effect, .index-portfolio-slide:hover .overlay-effect {
+      opacity: 1;
+      visibility: visible; }
+    .index-portfolio-slide:focus .view-more-btn a, .index-portfolio-slide:hover .view-more-btn a {
+      right: 40px;
+      opacity: 1;
+      visibility: visible; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .index-portfolio-slide:focus .view-more-btn a, .index-portfolio-slide:hover .view-more-btn a {
+          right: 30px; } }
 
 .portfolio-sildes {
   position: relative;
@@ -1053,8 +1148,11 @@ input:focus {
       .portfolio-menu button {
         font-size: 14px;
         margin: 0 5px; } }
-    .portfolio-menu button.active, .portfolio-menu button:hover {
-      color: #303030; }
+    .portfolio-menu button:hover {
+      color: #1583e9; }
+	.portfolio-menu button.active {
+      color: #303030;
+text-decoration: underline;	  }
     .portfolio-menu button:focus {
       box-shadow: none; }
 
@@ -1969,11 +2067,13 @@ input:focus {
 .single-team-slide {
   position: relative;
   z-index: 1;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  ;
+ }
   .single-team-slide img {
     position: relative;
     z-index: 1;
-    width: 100%; }
+	}
   .single-team-slide .overlay-effect {
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
@@ -2074,7 +2174,8 @@ input:focus {
 
 .team-sildes {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  }
   .team-sildes .owl-dots {
     position: relative;
     z-index: 1;
@@ -2251,16 +2352,19 @@ input:focus {
   z-index: 1; }
   .uza-contact-form .form-control {
     width: 100%;
-    height: 50px;
+    height: 45px;
     padding: 0 20px;
-    border-radius: 30px;
+    border-radius: 0 20px 20px 0;
     color: #a6a6a6;
-    font-size: 14px; }
+	margin-bottom: 20px;
+    font-size: 15px; }
     .uza-contact-form .form-control:focus {
       box-shadow: none;
       border-color: #1583e9; }
   .uza-contact-form textarea.form-control {
     height: 110px;
     padding: 20px; }
+	
+
 
 /*# sourceMappingURL=style.css.map */
