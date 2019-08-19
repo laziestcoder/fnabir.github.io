@@ -10,7 +10,6 @@
 
 <IfModule mod_expires.c>
     ExpiresActive on
-    ExpiresDefault                                      "access plus 1 month"
     ExpiresByType text/css                              "access plus 1 year"
     ExpiresByType application/json                      "access plus 0 seconds"
     ExpiresByType application/ld+json                   "access plus 0 seconds"
