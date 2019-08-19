@@ -12,12 +12,12 @@
   ExpiresActive On
 
   # Images
-  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/jpg "access plus 1 month"
   ExpiresByType image/gif "access plus 1 month"
   ExpiresByType image/png "access plus 1 month"
   ExpiresByType image/webp "access plus 1 month"
   ExpiresByType image/svg+xml "access plus 1 month"
-  ExpiresByType image/x-icon "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 year"
 
   # Video
   ExpiresByType video/mp4 "access plus 1 year"
