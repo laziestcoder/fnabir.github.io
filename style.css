@@ -127,7 +127,7 @@ z-index: 1;}
   background: url(img/bg-img/project.webp) 93.5% no-repeat;
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 40vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -262,7 +262,7 @@ z-index: 1;}
 }
 
 .hero-section-dumbwaiter {	
-  background: url(img/bg-img/dumbwaiter.jpg) 93.5% no-repeat;
+  background: url(img/bg-img/dumbwaiter-elevator.jpg) 93.5% no-repeat;
   background-size: cover;
   background-position: center;
   height: 50vh;
