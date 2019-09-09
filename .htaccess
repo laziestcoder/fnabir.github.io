@@ -7,7 +7,9 @@
 # RewriteCond %{REQUEST_FILENAME} !-d
 # RewriteRule ^(.*)/$ /$1 [L,R=301]*/
 </IfModule>
-
+<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|svg|js|css|swf|webp)$">
+Header set Cache-Control "max-age=84600, public"
+</filesMatch>
 <IfModule mod_expires.c>
     ExpiresActive on
 #	ExpiresDefault                                      "access plus 1 month"
