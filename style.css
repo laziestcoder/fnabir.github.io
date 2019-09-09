@@ -1,4 +1,4 @@
-@import url(fonts/aileron-font-style.css);@import url(css/bootstrap.min.css);@import url(css/animate.css);@import url(css/default-assets/classy-nav.css);@import url(css/owl.carousel.min.css);@import url(css/magnific-popup.css);@import url(css/font-awesome.min.css);@import url(css/style.css);table#Project{width:100%;background-color:#f1f1c1;text-align:center;border-spacing:5px;padding:15px;font-size:18px;border-color:#f1f1c1;}
+table#Project{width:100%;background-color:#f1f1c1;text-align:center;border-spacing:5px;padding:15px;font-size:18px;border-color:#f1f1c1;}
 @media only screen and (min-width:992px) and (max-width:1199px){table#Project{font-size:16px;}
 }
 @media only screen and (min-width:768px) and (max-width:991px){table#Project{font-size:14px;}
