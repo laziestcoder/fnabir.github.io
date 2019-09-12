@@ -9,7 +9,7 @@
 </IfModule>
 <IfModule mod_rewrite.c>
 RewriteCond %{REMOTE_HOST} 192\.168\.0.\102
-RewriteCond %{REQUEST_URI} /projects/1.html$
+RewriteCond %{REQUEST_URI} /projects/1.html
 RewriteRule .* /projects/tcjrp1.html [R=301,L]
 </IfModule>
 <filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|svg|js|css|swf|webp)$">
