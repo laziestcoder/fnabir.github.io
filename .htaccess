@@ -8,7 +8,7 @@
 # RewriteRule ^(.*)/$ /$1 [L,R=301]*/
 </IfModule>
 <IfModule mod_rewrite.c>
-RewriteCond %{REMOTE_HOST} 123\.253\.99.\34
+RewriteCond %{REMOTE_HOST} 192\.168\.0.\102
 RewriteCond %{REQUEST_URI} /projects/1.html$
 RewriteRule .* /projects/tcjrp1.html [R=301,L]
 </IfModule>
