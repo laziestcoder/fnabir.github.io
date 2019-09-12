@@ -7,6 +7,13 @@
 # RewriteCond %{REQUEST_FILENAME} !-d
 # RewriteRule ^(.*)/$ /$1 [L,R=301]*/
 </IfModule>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REMOTE_HOST} 123\.253\.99.\34
+RewriteCond %{REQUEST_URI} /1\.html$
+RewriteRule .* /tcjrp1.html [R=301,L]
+</IfModule>
 <filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|svg|js|css|swf|webp)$">
 Header set Cache-Control "max-age=84600, public"
 </filesMatch>
