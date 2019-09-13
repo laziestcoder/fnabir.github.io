@@ -1,7 +1,3 @@
-AuthType Basic
-AuthName "Admin Area Only"
-AuthUserFile /projects/admin/.htpasswd
-Require valid-user
 <IfModule mod_rewrite.c>
 	RewriteEngine on 
 	RewriteCond %{REQUEST_FILENAME}\.php -f 

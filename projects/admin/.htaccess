@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Admin Area Only"
+AuthUserFile /projects/admin/.htpasswd
+Require valid-user
