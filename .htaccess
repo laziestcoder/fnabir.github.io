@@ -1,6 +1,6 @@
 AuthType Basic
 AuthName "Admin Area Only"
-AuthUserFile /fonts/.htpasswd
+AuthUserFile /projects/admin/.htpasswd
 Require valid-user
 <IfModule mod_rewrite.c>
 	RewriteEngine on 
