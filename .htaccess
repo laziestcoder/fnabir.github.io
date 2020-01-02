@@ -13,7 +13,6 @@ RewriteEngine On
 RewriteCond %{REMOTE_ADDR} ^192\.168\.0\.1$ [NC,OR]
 RewriteCond %{REMOTE_ADDR} ^192\.168\.1\.1$ [NC]
 RewriteCond %{HTTP_USER_AGENT} Windows
-RewriteRule /projects/1.html$ https://asianliftbangladesh.com/projects/tcjrp1.html [R=301,L,NC]
 </IfModule>
 <filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|svg|js|css|swf|webp)$">
 Header set Cache-Control "max-age=84600, public"
