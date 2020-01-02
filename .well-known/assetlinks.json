@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.asianliftbangladesh.asianliftbangladesh",
+    "sha256_cert_fingerprints":
+    ["B8:87:5F:54:00:D5:7C:F5:35:3D:38:0C:60:3E:9B:0E:47:46:95:E7:74:19:20:30:4A:94:72:82:E0:01:EC:EB"]
+  }
+}]
