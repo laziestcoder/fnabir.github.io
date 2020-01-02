@@ -1,2 +1,2 @@
 layout: none
-permalink: .well-known/foo.txt
+permalink: .well-known/assetlinks.json
